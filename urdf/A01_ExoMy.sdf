@@ -1,0 +1,909 @@
+<sdf version='1.7'>
+  <model name='A01_ExoMy'>
+    <link name='base_link'>
+      <inertial>
+        <pose>0.017733 0.000166 0.122886 0 -0 0</pose>
+        <mass>0.621312</mass>
+        <inertia>
+          <ixx>0.00600796</ixx>
+          <ixy>-2.48106e-05</ixy>
+          <ixz>-0.000924262</ixz>
+          <iyy>0.00652812</iyy>
+          <iyz>1.65546e-05</iyz>
+          <izz>0.00258492</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__bling_link_collision_1'>
+        <pose>0.08 0.0225 0 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/bling_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__head_link_collision_2'>
+        <pose>0.028 0 0.27028 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/head_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cam_link_collision_3'>
+        <pose>0.063 9.4e-05 0.272435 -3.14159 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/cam_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__eyewhite_link_collision_4'>
+        <pose>0.067 -0.052 0.29328 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/eyewhite_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__pupil_right_link_collision_5'>
+        <pose>0.069 -0.052265 0.288788 1.5708 0.058928 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/pupil_right_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__pupil_left_link_collision_6'>
+        <pose>0.069 0.052606 0.288821 1.5708 -0.134938 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/pupil_left_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__hat_link_collision_7'>
+        <pose>0.027 -0 0.26928 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/hat_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bling_link_visual_1'>
+        <pose>0.08 0.0225 0 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/bling_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__head_link_visual_2'>
+        <pose>0.028 0 0.27028 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/head_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cam_link_visual_3'>
+        <pose>0.063 9.4e-05 0.272435 -3.14159 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/cam_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__eyewhite_link_visual_4'>
+        <pose>0.067 -0.052 0.29328 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/eyewhite_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__pupil_right_link_visual_5'>
+        <pose>0.069 -0.052265 0.288788 1.5708 0.058928 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/pupil_right_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__pupil_left_link_visual_6'>
+        <pose>0.069 0.052606 0.288821 1.5708 -0.134938 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/pupil_left_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__hat_link_visual_7'>
+        <pose>0.027 -0 0.26928 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/hat_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='LFB_joint' type='revolute'>
+      <pose relative_to='base_link'>0.055 0.062 0.017 -1.5708 0 0</pose>
+      <parent>base_link</parent>
+      <child>LFB_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='LFB_link'>
+      <pose relative_to='LFB_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-1.6e-05 -0.006283 0.026326 0 -0 0</pose>
+        <mass>0.0924732</mass>
+        <inertia>
+          <ixx>2.29318e-05</ixx>
+          <ixy>4.34816e-09</ixy>
+          <ixz>1.98435e-09</ixz>
+          <iyy>0.000122754</iyy>
+          <iyz>-4.18265e-07</iyz>
+          <izz>0.000113483</izz>
+        </inertia>
+      </inertial>
+      <collision name='LFB_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/LFB_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='LFB_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/LFB_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='STR_LF_joint' type='revolute'>
+      <pose relative_to='LFB_link'>0.08 0.015418 0.041775 1.5708 -0 0</pose>
+      <parent>LFB_link</parent>
+      <child>STR_LF_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='STR_LF_link'>
+      <pose relative_to='STR_LF_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.000225 0.012457 -0.033761 0 -0 0</pose>
+        <mass>0.0711742</mass>
+        <inertia>
+          <ixx>4.10598e-05</ixx>
+          <ixy>8.98028e-09</ixy>
+          <ixz>-1.40355e-07</ixz>
+          <iyy>3.36879e-05</iyy>
+          <iyz>4.73851e-06</iyz>
+          <izz>1.59152e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='STR_LF_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_LF_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='STR_LF_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_LF_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='DRV_LF_joint' type='revolute'>
+      <pose relative_to='STR_LF_link'>0 -0.002386 -0.057244 -1.5708 0 0</pose>
+      <parent>STR_LF_link</parent>
+      <child>DRV_LF_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='DRV_LF_link'>
+      <pose relative_to='DRV_LF_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0 0.000211 -0.007467 0 -0 0</pose>
+        <mass>0.0569726</mass>
+        <inertia>
+          <ixx>5.23057e-05</ixx>
+          <ixy>1.42808e-11</ixy>
+          <ixz>-1.21312e-11</ixz>
+          <iyy>5.21106e-05</iyy>
+          <iyz>6.30118e-08</iyz>
+          <izz>8.04987e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='DRV_LF_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_LF_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='DRV_LF_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_LF_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='STR_LM_joint' type='revolute'>
+      <pose relative_to='LFB_link'>-0.08 0.015418 0.041775 1.5708 -0 0</pose>
+      <parent>LFB_link</parent>
+      <child>STR_LM_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='STR_LM_link'>
+      <pose relative_to='STR_LM_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.000226 0.012456 -0.033761 0 -0 0</pose>
+        <mass>0.0711731</mass>
+        <inertia>
+          <ixx>4.10633e-05</ixx>
+          <ixy>-8.07921e-09</ixy>
+          <ixz>1.40511e-07</ixz>
+          <iyy>3.36873e-05</iyy>
+          <iyz>4.74136e-06</iyz>
+          <izz>1.59192e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='STR_LM_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_LM_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='STR_LM_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_LM_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='DRV_LM_joint' type='revolute'>
+      <pose relative_to='STR_LM_link'>0 -0.002386 -0.057244 -1.5708 0 0</pose>
+      <parent>STR_LM_link</parent>
+      <child>DRV_LM_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='DRV_LM_link'>
+      <pose relative_to='DRV_LM_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0 0.000211 -0.007467 0 -0 0</pose>
+        <mass>0.0569726</mass>
+        <inertia>
+          <ixx>5.23057e-05</ixx>
+          <ixy>1.42799e-11</ixy>
+          <ixz>-1.25464e-11</ixz>
+          <iyy>5.21106e-05</iyy>
+          <iyz>6.30113e-08</iyz>
+          <izz>8.04987e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='DRV_LM_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_LM_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='DRV_LM_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_LM_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='MRB_joint' type='revolute'>
+      <pose relative_to='base_link'>-0.082 0 0.017 1.5708 -0 1.5708</pose>
+      <parent>base_link</parent>
+      <child>MRB_link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <effort>0</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='MRB_link'>
+      <pose relative_to='MRB_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-1.9e-05 0.005157 -0.052852 0 -0 0</pose>
+        <mass>0.105561</mass>
+        <inertia>
+          <ixx>4.60285e-05</ixx>
+          <ixy>3.16961e-09</ixy>
+          <ixz>7.76761e-08</ixz>
+          <iyy>0.000262746</iyy>
+          <iyz>-4.2821e-07</iyz>
+          <izz>0.000230607</izz>
+        </inertia>
+      </inertial>
+      <collision name='MRB_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/MRB_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='MRB_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/MRB_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='STR_LR_joint' type='revolute'>
+      <pose relative_to='MRB_link'>0.10378 -0.015418 -0.080775 1.5708 -0 -3.14159</pose>
+      <parent>MRB_link</parent>
+      <child>STR_LR_link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <effort>0</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='STR_LR_link'>
+      <pose relative_to='STR_LR_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.012457 0.000225 -0.033761 0 -0 0</pose>
+        <mass>0.0711742</mass>
+        <inertia>
+          <ixx>3.36879e-05</ixx>
+          <ixy>-8.98028e-09</ixy>
+          <ixz>-4.73851e-06</ixz>
+          <iyy>4.10598e-05</iyy>
+          <iyz>-1.40355e-07</iyz>
+          <izz>1.59152e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='STR_LR_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_LR_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='STR_LR_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_LR_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='DRV_LR_joint' type='revolute'>
+      <pose relative_to='STR_LR_link'>0.002386 0 -0.057244 -1.5708 -0 -3.14159</pose>
+      <parent>STR_LR_link</parent>
+      <child>DRV_LR_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='DRV_LR_link'>
+      <pose relative_to='DRV_LR_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.007467 0.000211 0 0 -0 0</pose>
+        <mass>0.0569726</mass>
+        <inertia>
+          <ixx>8.04987e-05</ixx>
+          <ixy>6.30118e-08</ixy>
+          <ixz>1.21312e-11</ixz>
+          <iyy>5.21106e-05</iyy>
+          <iyz>-1.42808e-11</iyz>
+          <izz>5.23057e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='DRV_LR_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_LR_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='DRV_LR_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_LR_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='STR_RR_joint' type='revolute'>
+      <pose relative_to='MRB_link'>-0.10378 -0.015418 -0.080775 -1.5708 0 0</pose>
+      <parent>MRB_link</parent>
+      <child>STR_RR_link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <effort>0</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='STR_RR_link'>
+      <pose relative_to='STR_RR_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.012456 -0.000226 -0.033761 0 -0 0</pose>
+        <mass>0.0711731</mass>
+        <inertia>
+          <ixx>3.36873e-05</ixx>
+          <ixy>8.07921e-09</ixy>
+          <ixz>-4.74136e-06</ixz>
+          <iyy>4.10633e-05</iyy>
+          <iyz>1.40511e-07</iyz>
+          <izz>1.59192e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='STR_RR_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_RR_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='STR_RR_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_RR_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='DRV_RR_joint' type='revolute'>
+      <pose relative_to='STR_RR_link'>0.002386 0 -0.057244 -1.5708 0 0</pose>
+      <parent>STR_RR_link</parent>
+      <child>DRV_RR_link</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='DRV_RR_link'>
+      <pose relative_to='DRV_RR_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.007467 0.000211 -0 0 -0 0</pose>
+        <mass>0.0569726</mass>
+        <inertia>
+          <ixx>8.04987e-05</ixx>
+          <ixy>-6.30118e-08</ixy>
+          <ixz>1.21312e-11</ixz>
+          <iyy>5.21106e-05</iyy>
+          <iyz>1.42808e-11</iyz>
+          <izz>5.23057e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='DRV_RR_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_RR_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='DRV_RR_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_RR_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='RFB_joint' type='revolute'>
+      <pose relative_to='base_link'>0.055 -0.062 0.017 -1.5708 0 0</pose>
+      <parent>base_link</parent>
+      <child>RFB_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>0</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='RFB_link'>
+      <pose relative_to='RFB_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>1.6e-05 -0.006283 -0.026326 0 -0 0</pose>
+        <mass>0.0924732</mass>
+        <inertia>
+          <ixx>2.29318e-05</ixx>
+          <ixy>-4.34816e-09</ixy>
+          <ixz>1.98435e-09</ixz>
+          <iyy>0.000122754</iyy>
+          <iyz>4.18265e-07</iyz>
+          <izz>0.000113483</izz>
+        </inertia>
+      </inertial>
+      <collision name='RFB_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/RFB_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='RFB_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/RFB_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='STR_RF_joint' type='revolute'>
+      <pose relative_to='RFB_link'>0.08 0.015418 -0.041775 1.5708 -0 0</pose>
+      <parent>RFB_link</parent>
+      <child>STR_RF_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>0</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='STR_RF_link'>
+      <pose relative_to='STR_RF_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.000226 -0.012456 -0.033761 0 -0 0</pose>
+        <mass>0.0711731</mass>
+        <inertia>
+          <ixx>4.10633e-05</ixx>
+          <ixy>-8.07921e-09</ixy>
+          <ixz>-1.40511e-07</ixz>
+          <iyy>3.36873e-05</iyy>
+          <iyz>-4.74136e-06</iyz>
+          <izz>1.59192e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='STR_RF_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_RF_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='STR_RF_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_RF_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='DRV_RF_joint' type='revolute'>
+      <pose relative_to='STR_RF_link'>0 0.002386 -0.057244 -1.5708 0 0</pose>
+      <parent>STR_RF_link</parent>
+      <child>DRV_RF_link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='DRV_RF_link'>
+      <pose relative_to='DRV_RF_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0.000211 0.007467 0 -0 0</pose>
+        <mass>0.0569726</mass>
+        <inertia>
+          <ixx>5.23057e-05</ixx>
+          <ixy>-1.42808e-11</ixy>
+          <ixz>-1.21312e-11</ixz>
+          <iyy>5.21106e-05</iyy>
+          <iyz>-6.30118e-08</iyz>
+          <izz>8.04987e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='DRV_RF_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_RF_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='DRV_RF_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_RF_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='STR_RM_joint' type='revolute'>
+      <pose relative_to='RFB_link'>-0.08 0.015418 -0.041775 1.5708 -0 0</pose>
+      <parent>RFB_link</parent>
+      <child>STR_RM_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='STR_RM_link'>
+      <pose relative_to='STR_RM_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.000225 -0.012457 -0.033761 0 -0 0</pose>
+        <mass>0.0711742</mass>
+        <inertia>
+          <ixx>4.10598e-05</ixx>
+          <ixy>8.98028e-09</ixy>
+          <ixz>1.40355e-07</ixz>
+          <iyy>3.36879e-05</iyy>
+          <iyz>-4.73851e-06</iyz>
+          <izz>1.59152e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='STR_RM_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_RM_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='STR_RM_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/STR_RM_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='DRV_RM_joint' type='revolute'>
+      <pose relative_to='STR_RM_link'>0 0.002386 -0.057244 -1.5708 0 0</pose>
+      <parent>STR_RM_link</parent>
+      <child>DRV_RM_link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='DRV_RM_link'>
+      <pose relative_to='DRV_RM_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0.000211 0.007467 0 -0 0</pose>
+        <mass>0.0569726</mass>
+        <inertia>
+          <ixx>5.23057e-05</ixx>
+          <ixy>-1.42799e-11</ixy>
+          <ixz>-1.25464e-11</ixz>
+          <iyy>5.21106e-05</iyy>
+          <iyz>-6.30122e-08</iyz>
+          <izz>8.04987e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='DRV_RM_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_RM_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='DRV_RM_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://A01_ExoMy/meshes/DRV_RM_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <static>0</static>
+    
+  </model>
+</sdf>
